@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn btn-success" (click)="onNewArt()">New Art</div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <app-art-item 
+        *ngFor="let artElement of arts; let i = index" 
+        [art]='artElement'
+        [index] = i>
+        </app-art-item>
+    </div>
+</div>

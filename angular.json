@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "/Users/gurinder.kaur/Documents/AngularDemo/Artbook/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "/Users/gurinder.kaur/Documents/AngularDemo/Artbook/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "/Users/gurinder.kaur/Documents/AngularDemo/Artbook/node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -47,6 +51,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              
               "budgets": [
                 {
                   "type": "initial",
@@ -91,9 +96,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "/Users/gurinder.kaur/Documents/AngularDemo/Artbook/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "/Users/gurinder.kaur/Documents/AngularDemo/Artbook/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "/Users/gurinder.kaur/Documents/AngularDemo/Artbook/node_modules/jquery/dist/jquery.min.js"
+            ]
           }
         },
         "lint": {

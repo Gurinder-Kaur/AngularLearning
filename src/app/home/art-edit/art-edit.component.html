@@ -1,0 +1,71 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form [formGroup]="artForm" (ngSubmit) = "onSubmit()">
+            <div class="row">
+                <div class="col-xs-12">
+                    <button type="submit" class="btn btn-success" [disabled] = "!artForm.valid">Save</button>
+                    <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input 
+                          type="text"
+                          id = "title"
+                          formControlName = "title"
+                          class="form-control"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="creator">Creator</label>
+                        <input 
+                          type="text"
+                          id = "creator"
+                          formControlName = "creator"
+                          class="form-control"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="imagepath">Image URL</label>
+                        <input 
+                          type="text"
+                          id = "imagepath"
+                          formControlName = "imagepath"
+                          class="form-control"
+                          #imagepath
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <img [src]="imagepath.value" class="img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea 
+                          type="text"
+                          id = "description"
+                          formControlName = "description"
+                          class="form-control"
+                          rows="6"
+                        ></textarea>>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
